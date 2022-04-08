@@ -1,0 +1,126 @@
+{
+	"info": {
+		"_postman_id": "30226b25-db1c-4b55-a844-177d1a18e971",
+		"name": "todolistkata-heroku",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "取得所有代辦",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://murmuring-bayou-09291.herokuapp.com",
+					"protocol": "https",
+					"host": [
+						"murmuring-bayou-09291",
+						"herokuapp",
+						"com"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "新增一筆代辦",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"台灣\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://murmuring-bayou-09291.herokuapp.com/todos",
+					"protocol": "https",
+					"host": [
+						"murmuring-bayou-09291",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除所有代辦",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://murmuring-bayou-09291.herokuapp.com/todos",
+					"protocol": "https",
+					"host": [
+						"murmuring-bayou-09291",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除一筆代辦",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://murmuring-bayou-09291.herokuapp.com/todos/f7bd805e-7626-43f9-b5c4-1fa8b0d34b18",
+					"protocol": "https",
+					"host": [
+						"murmuring-bayou-09291",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos",
+						"f7bd805e-7626-43f9-b5c4-1fa8b0d34b18"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "編輯單筆代辦",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"日本1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://murmuring-bayou-09291.herokuapp.com/todos/c2af6c18-f602-4800-9c33-bab3fc1ccb9c",
+					"protocol": "https",
+					"host": [
+						"murmuring-bayou-09291",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos",
+						"c2af6c18-f602-4800-9c33-bab3fc1ccb9c"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
